@@ -6,23 +6,122 @@
     android:layout_height="match_parent"
     tools:context="com.example.xp.isonidos.MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintDimensionRatio="1:1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
 
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/papa"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SONIDO1"
-            android:onClick="sonido"
-            android:id="@+id/a"
-        />
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="sonido"
-            android:text="SONIDO2" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linea1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/sonido1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="sonido"
+                    android:tag="0"
+                    android:text="SONIDO1" />
+
+                <Button
+                    android:id="@+id/sonido2"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="sonido"
+                    android:tag="1"
+                    android:text="SONIDO2" />
+
+                <Button
+                    android:id="@+id/sonido3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="sonido"
+                    android:tag="2"
+                    android:text="SONIDO3" />
+
+                <Button
+                    android:id="@+id/sonido4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="sonido"
+                    android:tag="3"
+                    android:text="SONIDO4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linea2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/sonido5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="sonido"
+                    android:tag="4"
+                    android:text="SONIDO5" />
+
+                <Button
+                    android:id="@+id/sonido6"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="sonido"
+                    android:tag="5"
+                    android:text="SONIDO6" />
+
+                <Button
+                    android:id="@+id/sonido7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="sonido"
+                    android:tag="6"
+                    android:text="SONIDO7" />
+
+                <Button
+                    android:id="@+id/sonido8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="sonido"
+                    android:tag="7"
+                    android:text="SONIDO8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linea3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/sonido9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="sonido"
+                    android:tag="8"
+                    android:text="SONIDO9" />
+
+                <Button
+                    android:id="@+id/sonido10"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="sonido"
+                    android:tag="9"
+                    android:text="SONIDO10" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
