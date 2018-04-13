@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     SoundPool sonidos;
     int sonido1, sonido2, sonido3, sonido4, sonido5;
     int sonido6, sonido7, sonido8, sonido9, sonido10;
+//    int imagen1, imagen2, imagen3, imagen4, imagen5;
+//    int imagen6, imagen7, imagen8, imagen9, imagen10;
 //    ArrayList <Integer> listaInt = new ArrayList();
 //    Field[] son = R.raw.class.getFields();
 
@@ -69,4 +71,14 @@ public class MainActivity extends AppCompatActivity {
             break;
         }
     }
+
+//   public void imagen(View vista)
+//    {
+//        Button boton = (Button)findViewById(vista.getId());
+//        int idImagen = Integer.valueOf(boton.getTag().toString());
+//        switch(idImagen)
+//        {
+//            case 0:
+//        }
+//    }
 }
